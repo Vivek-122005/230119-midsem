@@ -1,0 +1,168 @@
+{
+  "student_metadata": {
+    "name": "Vivek",
+    "roll_number": "230119",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-02"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "provider": "OpenAI"
+    },
+    {
+      "tool_name": "ChatGPT",
+      "model": "ChatGPT 5.2",
+      "provider": "OpenAI"
+    },
+    {
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "provider": "Anthropic"
+    },
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-02",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Initial filtering of Part A paper options under strict guideline constraints.",
+      "prompt": "see i have select one reseach paper for part A of mid sems open book contest, for which i want you to go through the guidline document attached and give me reseach which are of SVM and GMM only. and these are some research papers already selected :- Online Multiscale Dynamic Topic Models Revisiting k-means: New Algorithms via Bayesian Nonparametrics Baselines and Bigrams: Simple, Good Sentiment and Topic Classification Time Series Shapelets: A New Primitive for Data Mining Efficiently Learning the Accuracy of Labeling Sources for Selective Sampling From Natural Images to GMMs and Dead Leaves Adaptive Kernel Approximation for Large-Scale Non-Linear SVM Prediction Ensemble of Exemplar-SVMs for Object Detection and Beyond Improving the Fisher Kernel for Large-Scale Image Classification Convergence of the EM Algorithm for Gaussian Mixtures with Unbalanced Mixing Coefficients (2012) Large-scale Linear Support Vector Regression Poisoning Attacks against Support Vector Machines SVM Classifier Estimation from Group Probabilities Support Vector Machines as Probabilistic Models",
+      "llm_response_used": "Yes",
+      "how_it_helped": "This gave me an exclusion-safe starting set for SVM and GMM papers and avoided duplicate selections.",
+      "student_verification": "I checked venue/year conditions against the guideline PDF and removed papers that were already taken in my class list.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-02",
+      "tool_name": "ChatGPT",
+      "model": "ChatGPT 5.2",
+      "purpose": "Search for methodological classical ML papers in top venues with exam constraints.",
+      "prompt": "Identify classical ML papers (2009-2012) from NeurIPS, ICML, AISTATS, KDD that introduce core methodological changes in SVMs or GMMs, not just applications. Do NOT Select Papers That \u2022 Require special approvals or restricted access \u2022 Use proprietary, medical, clinical, telecom, or industry data \u2022 Depend on unavailable or licensed datasets \u2022 Require GPUs or large-scale infrastructure and it must folow these guidelines.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "It narrowed the search to method papers and aligned directly with my exam constraints.",
+      "student_verification": "I manually checked that suggested papers were in the allowed year range and that datasets were public or replaceable.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-02",
+      "tool_name": "Claude",
+      "model": "Claude Sonnet 4.6",
+      "purpose": "Find feasible GMM papers for short CPU-only reproduction.",
+      "prompt": "give me gmm paper from JMLR and NeurIPS and ICML, which could be reproduced in 5-8 days cpu only core",
+      "llm_response_used": "Partially",
+      "how_it_helped": "It produced candidate GMM papers, but not all were equally feasible for my timeline.",
+      "student_verification": "I filtered the output by implementation complexity and whether experiments could realistically run on my laptop CPU.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-02",
+      "tool_name": "ChatGPT",
+      "model": "ChatGPT 5.2",
+      "purpose": "Comparative suitability analysis between Early NN and Shapelet-family papers for Parts B and C.",
+      "prompt": "so this paper:- Early Prediction on Time Series: A Nearest Neighbor Approac https://www.ijcai.org/Proceedings/09/Papers/218.pdf, has extended publication in 2011. can you check if this 2009 publication follow all guidelines ?? , see part B and part C are these Reproduction, experiments, and analysis, and Explanation and reasoning based on Part B so chosing the early NN, would affect or matter or chosing the tranform shapelet, how big was the research impact and represtation learning of the Shapelet in comparision to early nn, check how suitable is this paper as per the guidelines :- Early Prediction on Time Series: A Nearest Neighbor Approach, can you compare the this Early Prediction on Time Series: A Nearest Neighbor Approach with Shapelet Transform, if i have to chose between Efficient variable selection in support vector machines via ADMM and logical sharplet, based on this output, i want you to give me an detailed prompt, to find an better research paper than Shapelet Transform, which one is more hard Logical-Shapelets and Shapelet Transform. and in real world problem which one is more usabel ?? and which one paper was bigger success.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "This directly informed my final choice by comparing feasibility, difficulty, and practical usability.",
+      "student_verification": "I read the IJCAI 2009 paper and confirmed it has a clear algorithm, public benchmark datasets, and CPU-feasible experiments.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-02",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Generate alternatives in time-series after removing already-selected papers.",
+      "prompt": "now give me some reseach papers on time series, from the core A conferences or journals, following the condition that they can be reproduced in 5-8 days cpu only core, which introduced core methodological changes",
+      "llm_response_used": "Yes",
+      "how_it_helped": "I got additional time-series options and shortlist candidates after excluding previously selected papers.",
+      "student_verification": "I cross-checked year 2009-2012 and venue eligibility from the guideline list before considering any suggestion.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 6,
+      "date": "2026-03-02",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Refine shortlist after Shapelet Transform became unavailable.",
+      "prompt": "A shapelet transform for time series classification, this paper was nice and was selected already, now i want you to find some more paper. on the time series",
+      "llm_response_used": "Yes",
+      "how_it_helped": "This helped me continue with valid backups while avoiding duplicate conflicts.",
+      "student_verification": "I retained only papers with explicit model/algorithm contributions and removed motif/similarity-only papers.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 7,
+      "date": "2026-03-02",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Apply strict final constraints for selecting a paper suitable for Parts B/C.",
+      "prompt": "Find classical machine learning research papers published between 2009 and 2012 in CORE A* venues (ICML, NeurIPS, AISTATS, KDD, ICDM, JMLR, PAMI, AAAI, IJCAI) whose primary methodological contribution is in time-series classification, SVM, or related classical ML methods. The paper should satisfy all of the following: - Presents a clear machine learning model or algorithm (not just similarity measure, motif discovery, or theoretical analysis) - Focuses on classification or prediction tasks rather than pattern mining or distance metrics - Includes experiments on publicly available datasets - Experiments are reproducible on a standard CPU laptop - Has an interpretable and explainable learning pipeline - Does not rely on proprietary or restricted datasets - Not a dataset, benchmark, or system implementation paper - Not deep learning or post-2012 methods Prefer papers that: - Provide feature representation or classifier design similar to or better than shapelet transform - Have clear inference procedure and failure cases - Are easier or more standard to implement than Logical-Shapelets - Have strong experimental comparisons Exclude: - Shapelet Transform and its variants - Motif discovery papers - Pure similarity/distance measures - Heavy theoretical causal or graphical model papers",
+      "llm_response_used": "Yes",
+      "how_it_helped": "This was the strongest filter step and gave me a defensible shortlist for the final decision.",
+      "student_verification": "I rejected papers that violated exclusions and prioritized ones with transparent inference and straightforward reproduction.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 8,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3.1",
+      "purpose": "Convert all Part A LLM usage into the mandatory submission JSON format.",
+      "prompt": "Identify classical ML papers (2009-2012) from NeurIPS, ICML, AISTATS, KDD that introduce core methodological changes in SVMs or GMMs, not just applications. Do NOT Select Papers That \u2022 Require special approvals or restricted access \u2022 Use proprietary, medical, clinical, telecom, or industry data \u2022 Depend on unavailable or licensed datasets \u2022 Require GPUs or large-scale infrastructure and it must folow these guidelines, in pdf using all these information i want generate an json file in this format tfor he attached json file format, where my anme is Vivek and enrollment no :- 230119, submission date :- 2026-03-02",
+      "llm_response_used": "Partially",
+      "how_it_helped": "It helped me structure the final reporting fields and reminders for mandatory disclosure.",
+      "student_verification": "I checked field names, ensured prompt text remained verbatim, and matched final paper choice history.",
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 7,
+      "prompt": "Find classical machine learning research papers published between 2009 and 2012 in CORE A* venues (ICML, NeurIPS, AISTATS, KDD, ICDM, JMLR, PAMI, AAAI, IJCAI) whose primary methodological contribution is in time-series classification, SVM, or related classical ML methods. The paper should satisfy all of the following: - Presents a clear machine learning model or algorithm (not just similarity measure, motif discovery, or theoretical analysis) - Focuses on classification or prediction tasks rather than pattern mining or distance metrics - Includes experiments on publicly available datasets - Experiments are reproducible on a standard CPU laptop - Has an interpretable and explainable learning pipeline - Does not rely on proprietary or restricted datasets - Not a dataset, benchmark, or system implementation paper - Not deep learning or post-2012 methods Prefer papers that: - Provide feature representation or classifier design similar to or better than shapelet transform - Have clear inference procedure and failure cases - Are easier or more standard to implement than Logical-Shapelets - Have strong experimental comparisons Exclude: - Shapelet Transform and its variants - Motif discovery papers - Pure similarity/distance measures - Heavy theoretical causal or graphical model papers",
+      "why_important": "This was my strict final filter and directly shaped which papers were acceptable or rejected."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 4,
+      "prompt": "so this paper:- Early Prediction on Time Series: A Nearest Neighbor Approac https://www.ijcai.org/Proceedings/09/Papers/218.pdf, has extended publication in 2011. can you check if this 2009 publication follow all guidelines ?? , see part B and part C are these Reproduction, experiments, and analysis, and Explanation and reasoning based on Part B so chosing the early NN, would affect or matter or chosing the tranform shapelet, how big was the research impact and represtation learning of the Shapelet in comparision to early nn, check how suitable is this paper as per the guidelines :- Early Prediction on Time Series: A Nearest Neighbor Approach, can you compare the this Early Prediction on Time Series: A Nearest Neighbor Approach with Shapelet Transform, if i have to chose between Efficient variable selection in support vector machines via ADMM and logical sharplet, based on this output, i want you to give me an detailed prompt, to find an better research paper than Shapelet Transform, which one is more hard Logical-Shapelets and Shapelet Transform. and in real world problem which one is more usabel ?? and which one paper was bigger success.",
+      "why_important": "This prompt directly supported my final selection decision for Part A and Part B/C feasibility."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 2,
+      "prompt": "Identify classical ML papers (2009-2012) from NeurIPS, ICML, AISTATS, KDD that introduce core methodological changes in SVMs or GMMs, not just applications. Do NOT Select Papers That \u2022 Require special approvals or restricted access \u2022 Use proprietary, medical, clinical, telecom, or industry data \u2022 Depend on unavailable or licensed datasets \u2022 Require GPUs or large-scale infrastructure and it must folow these guidelines.",
+      "why_important": "It prevented me from selecting application-only papers and kept the shortlist method-focused."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 1,
+      "prompt": "see i have select one reseach paper for part A of mid sems open book contest, for which i want you to go through the guidline document attached and give me reseach which are of SVM and GMM only. and these are some research papers already selected :- Online Multiscale Dynamic Topic Models Revisiting k-means: New Algorithms via Bayesian Nonparametrics Baselines and Bigrams: Simple, Good Sentiment and Topic Classification Time Series Shapelets: A New Primitive for Data Mining Efficiently Learning the Accuracy of Labeling Sources for Selective Sampling From Natural Images to GMMs and Dead Leaves Adaptive Kernel Approximation for Large-Scale Non-Linear SVM Prediction Ensemble of Exemplar-SVMs for Object Detection and Beyond Improving the Fisher Kernel for Large-Scale Image Classification Convergence of the EM Algorithm for Gaussian Mixtures with Unbalanced Mixing Coefficients (2012) Large-scale Linear Support Vector Regression Poisoning Attacks against Support Vector Machines SVM Classifier Estimation from Group Probabilities Support Vector Machines as Probabilistic Models",
+      "why_important": "It established exclusions early and saved time by avoiding duplicate selections already taken by classmates."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 5,
+      "prompt": "now give me some reseach papers on time series, from the core A conferences or journals, following the condition that they can be reproduced in 5-8 days cpu only core, which introduced core methodological changes",
+      "why_important": "It aligned paper search with practical implementation limits for Part B reproduction."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding_acknowledged": true,
+    "signature": "Vivek",
+    "date": "2026-03-02"
+  }
+}
