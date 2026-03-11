@@ -1,0 +1,98 @@
+{
+  "task_tag": "Task 2.2",
+  "student_metadata": {
+    "name": "Vivek",
+    "roll_number": "230119",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Implement prefix-sweep reproduction experiment.",
+      "task_tag": "Task 2.2",
+      "prompt": "Implement 1NN prefix-ratio sweep (10% to 100%) on FordA and save accuracy table plus plot.",
+      "response_summary": "Provided code skeleton for prefix evaluation, result tabulation, and visualization.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Accelerated implementation of the main contribution experiment.",
+      "code_used_verbatim": true,
+      "student_modification": "Changed metric parameterization, path handling, and print/report formatting.",
+      "student_verification": "I reran notebook and verified saved CSV/figure outputs.",
+      "confidence_level": 5,
+      "why_important": "Core experimental code for Question 2."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Add code-to-paper annotations after significant code blocks.",
+      "task_tag": "Task 2.2",
+      "prompt": "Add rubric-aligned markdown after each significant code block explaining what it does and how it maps to paper logic.",
+      "response_summary": "Suggested markdown structure connecting data setup, prefix mechanism, and result interpretation to the paper.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Improved explanation quality required by Task 2.2 grading criteria.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I edited wording to reflect my exact implementation choices.",
+      "confidence_level": 5,
+      "why_important": "Task 2.2 is graded heavily on explanation quality."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Clarify metric consistency with the guideline.",
+      "task_tag": "Task 2.2",
+      "prompt": "How should I explicitly declare the evaluation metric to remain consistent with paper comparison?",
+      "response_summary": "Recommended stating test accuracy at notebook start and using it uniformly across tables and plots.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Reduced ambiguity in evaluation protocol.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I confirmed all reported values are accuracy-based.",
+      "confidence_level": 5,
+      "why_important": "Ensures compatibility with Task 2.3 and Task 3 evaluations."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Implement 1NN prefix-ratio sweep (10% to 100%) on FordA and save accuracy table plus plot.",
+      "why_important": "Core experimental code for Question 2."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Add rubric-aligned markdown after each significant code block explaining what it does and how it maps to paper logic.",
+      "why_important": "Task 2.2 is graded heavily on explanation quality."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "How should I explicitly declare the evaluation metric to remain consistent with paper comparison?",
+      "why_important": "Ensures compatibility with Task 2.3 and Task 3 evaluations."
+    }
+  ],
+  "student_verification": "I verified that each logged interaction is task-relevant and that any copied code was reviewed and tested before inclusion.",
+  "student_declaration": {
+    "statement": "I declare that this file is an honest and complete disclosure of LLM usage for the stated task. Final decisions, interpretations, and conclusions are my own.",
+    "understanding_acknowledged": true,
+    "signature": "Vivek",
+    "date": "2026-03-12"
+  }
+}

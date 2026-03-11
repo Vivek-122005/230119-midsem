@@ -1,0 +1,6 @@
+prefix_ratio,prefix_percent,prefix_length,accuracy
+0.2,20,24,0.515
+0.4,40,48,0.46
+0.6,60,72,1.0
+0.8,80,96,1.0
+1.0,100,120,1.0

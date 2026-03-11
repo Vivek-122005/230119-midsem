@@ -1,0 +1,98 @@
+{
+  "task_tag": "Task 2.3",
+  "student_metadata": {
+    "name": "Vivek",
+    "roll_number": "230119",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Define and compute near-baseline stable prefix rule.",
+      "task_tag": "Task 2.3",
+      "prompt": "Given prefix accuracy results, compute earliest prefix within 1% of full-length baseline and summarize it clearly.",
+      "response_summary": "Provided a stable-prefix extraction rule and summary table structure.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Standardized how the early decision point is reported.",
+      "code_used_verbatim": true,
+      "student_modification": "Adjusted tolerance description, output format, and fallback handling for reproducibility.",
+      "student_verification": "I checked the extracted stable prefix against the saved results CSV.",
+      "confidence_level": 5,
+      "why_important": "This is the key reported result in Task 2.3."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Write honest comparison with paper despite non-identical setup.",
+      "task_tag": "Task 2.3",
+      "prompt": "Draft an honest gap commentary when my dataset and method simplification differ from the original paper.",
+      "response_summary": "Suggested language that reports qualitative agreement without overstating direct comparability.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Improved transparency and prevented over-claiming.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I retained only statements supported by my outputs and the paper.",
+      "confidence_level": 5,
+      "why_important": "Directly addresses a mandatory guideline requirement."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Strengthen reproducibility checklist completeness.",
+      "task_tag": "Task 2.3",
+      "prompt": "Create a final reproducibility checklist cell aligned with guideline expectations.",
+      "response_summary": "Proposed a checklist covering seeds, requirements, paths, run order, and saved artifacts.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Ensured checklist cell is explicit and complete.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I confirmed each checklist item against repository contents.",
+      "confidence_level": 5,
+      "why_important": "Checklist quality is specifically evaluated in Task 2.3."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Given prefix accuracy results, compute earliest prefix within 1% of full-length baseline and summarize it clearly.",
+      "why_important": "This is the key reported result in Task 2.3."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Draft an honest gap commentary when my dataset and method simplification differ from the original paper.",
+      "why_important": "Directly addresses a mandatory guideline requirement."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "Create a final reproducibility checklist cell aligned with guideline expectations.",
+      "why_important": "Checklist quality is specifically evaluated in Task 2.3."
+    }
+  ],
+  "student_verification": "I verified that each logged interaction is task-relevant and that any copied code was reviewed and tested before inclusion.",
+  "student_declaration": {
+    "statement": "I declare that this file is an honest and complete disclosure of LLM usage for the stated task. Final decisions, interpretations, and conclusions are my own.",
+    "understanding_acknowledged": true,
+    "signature": "Vivek",
+    "date": "2026-03-12"
+  }
+}

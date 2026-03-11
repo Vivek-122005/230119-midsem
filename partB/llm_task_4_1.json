@@ -1,0 +1,75 @@
+{
+  "task_tag": "Task 4.1",
+  "student_metadata": {
+    "name": "Vivek",
+    "roll_number": "230119",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Plan report section mapping to rubric marks.",
+      "task_tag": "Task 4.1",
+      "prompt": "Create a 4-page report outline that covers all required Task 4.1 sections and mark allocations.",
+      "response_summary": "Returned a section template aligned to paper summary, reproduction gap, ablations, failure mode, and reflection.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Prevented omission of required report sections.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I mapped each section to actual notebook outputs before drafting.",
+      "confidence_level": 5,
+      "why_important": "Ensures report completeness under strict page limit."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Synthesize findings without contradiction across tasks.",
+      "task_tag": "Task 4.1",
+      "prompt": "Help me summarize Task 2 and Task 3 findings consistently so report claims match notebook numbers.",
+      "response_summary": "Provided consistency checks and suggested concise phrasing for cross-task alignment.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Reduced contradiction risk between report and notebooks.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I cross-verified every numeric statement with saved CSV results.",
+      "confidence_level": 5,
+      "why_important": "Guideline explicitly penalizes contradictory claims."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Create a 4-page report outline that covers all required Task 4.1 sections and mark allocations.",
+      "why_important": "Ensures report completeness under strict page limit."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Help me summarize Task 2 and Task 3 findings consistently so report claims match notebook numbers.",
+      "why_important": "Guideline explicitly penalizes contradictory claims."
+    }
+  ],
+  "student_verification": "I verified that each logged interaction is task-relevant and that any copied code was reviewed and tested before inclusion.",
+  "student_declaration": {
+    "statement": "I declare that this file is an honest and complete disclosure of LLM usage for the stated task. Final decisions, interpretations, and conclusions are my own.",
+    "understanding_acknowledged": true,
+    "signature": "Vivek",
+    "date": "2026-03-12"
+  }
+}

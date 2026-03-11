@@ -1,0 +1,121 @@
+{
+  "task_tag": "Task 3.1",
+  "student_metadata": {
+    "name": "Vivek",
+    "roll_number": "230119",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Choose two independent component ablations as required.",
+      "task_tag": "Task 3.1 Component 1",
+      "prompt": "For ECTS-style prefix 1NN reproduction, suggest two independent component ablations that meet the rubric.",
+      "response_summary": "Recommended early-decision removal and metric substitution as two independent components.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Helped satisfy the exact two-component requirement.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I confirmed both ablations isolate one component at a time.",
+      "confidence_level": 5,
+      "why_important": "This determines core design of Task 3.1."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Implement and summarize Ablation 1 with numeric delta.",
+      "task_tag": "Task 3.1 Component 1",
+      "prompt": "Add an ablation summary comparing full-length-only vs early decision with accuracy and average prefix used.",
+      "response_summary": "Provided summary-table structure and interpretation guidance focused on tradeoff.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Improved result reporting clarity for component 1.",
+      "code_used_verbatim": true,
+      "student_modification": "Reworked labels and interpretation text; validated final numeric values from generated CSV.",
+      "student_verification": "I checked reported deltas against saved result files.",
+      "confidence_level": 5,
+      "why_important": "Produces required full-vs-ablated comparison for component 1."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Implement and interpret Ablation 2 across prefixes.",
+      "task_tag": "Task 3.1 Component 2",
+      "prompt": "Compare Euclidean vs Manhattan prefix curves and interpret where each metric wins.",
+      "response_summary": "Suggested metric comparison table and mixed-prefix interpretation approach.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Enabled a component-specific analysis rather than generic commentary.",
+      "code_used_verbatim": true,
+      "student_modification": "Kept core table logic, changed headings, and rewrote interpretation with exact deltas.",
+      "student_verification": "I verified full-length and prefix-level differences from saved metric CSV.",
+      "confidence_level": 5,
+      "why_important": "Fulfills second required component ablation."
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Upgrade markdown to rubric-aligned component-definition format.",
+      "task_tag": "Task 3.1",
+      "prompt": "Rewrite Task 3.1 markdown with component, role, what is ablated, independence condition, hypothesis, and 5-7 sentence interpretation.",
+      "response_summary": "Returned a structured template and helped align interpretation with evidence from generated results.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Improved compliance with grading rubric and readability.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I cross-checked each claim against numeric outputs before finalizing.",
+      "confidence_level": 5,
+      "why_important": "Directly improved scoring alignment for Task 3.1."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "For ECTS-style prefix 1NN reproduction, suggest two independent component ablations that meet the rubric.",
+      "why_important": "This determines core design of Task 3.1."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 4,
+      "prompt": "Rewrite Task 3.1 markdown with component, role, what is ablated, independence condition, hypothesis, and 5-7 sentence interpretation.",
+      "why_important": "Directly improved scoring alignment for Task 3.1."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 2,
+      "prompt": "Add an ablation summary comparing full-length-only vs early decision with accuracy and average prefix used.",
+      "why_important": "Produces required full-vs-ablated comparison for component 1."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 3,
+      "prompt": "Compare Euclidean vs Manhattan prefix curves and interpret where each metric wins.",
+      "why_important": "Fulfills second required component ablation."
+    }
+  ],
+  "student_verification": "I verified that each logged interaction is task-relevant and that any copied code was reviewed and tested before inclusion.",
+  "student_declaration": {
+    "statement": "I declare that this file is an honest and complete disclosure of LLM usage for the stated task. Final decisions, interpretations, and conclusions are my own.",
+    "understanding_acknowledged": true,
+    "signature": "Vivek",
+    "date": "2026-03-12"
+  }
+}

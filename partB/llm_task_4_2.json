@@ -1,0 +1,75 @@
+{
+  "task_tag": "Task 4.2",
+  "student_metadata": {
+    "name": "Vivek",
+    "roll_number": "230119",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Convert LLM disclosures to required Part B JSON format.",
+      "task_tag": "Task 4.2",
+      "prompt": "Reformat all llm_task JSON files to match Part A schema plus required fields task_tag, code_used_verbatim, and student_modification per interaction.",
+      "response_summary": "Generated a consistent schema and task-wise interaction logs for all ten files.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Standardized all disclosure files to guideline format.",
+      "code_used_verbatim": true,
+      "student_modification": "Reviewed and edited prompt text and verification statements task-by-task for accuracy.",
+      "student_verification": "I manually reviewed each JSON file for schema consistency and task relevance.",
+      "confidence_level": 5,
+      "why_important": "Task 4.2 marks depend on correct JSON structure across all files."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Validate top_5 prompts constraint per task.",
+      "task_tag": "Task 4.2",
+      "prompt": "Ensure top_5_prompts in each file are drawn only from interactions in that same file, with all included when fewer than five.",
+      "response_summary": "Applied task-specific top prompt lists and capped to available interactions.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Ensured compliance with top_5 prompt requirement.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I spot-checked prompt IDs against each interaction log.",
+      "confidence_level": 5,
+      "why_important": "This is explicitly stated in the guideline and affects file validity."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "Reformat all llm_task JSON files to match Part A schema plus required fields task_tag, code_used_verbatim, and student_modification per interaction.",
+      "why_important": "Task 4.2 marks depend on correct JSON structure across all files."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Ensure top_5_prompts in each file are drawn only from interactions in that same file, with all included when fewer than five.",
+      "why_important": "This is explicitly stated in the guideline and affects file validity."
+    }
+  ],
+  "student_verification": "I verified that each logged interaction is task-relevant and that any copied code was reviewed and tested before inclusion.",
+  "student_declaration": {
+    "statement": "I declare that this file is an honest and complete disclosure of LLM usage for the stated task. Final decisions, interpretations, and conclusions are my own.",
+    "understanding_acknowledged": true,
+    "signature": "Vivek",
+    "date": "2026-03-12"
+  }
+}

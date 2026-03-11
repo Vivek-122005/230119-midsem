@@ -1,0 +1,98 @@
+{
+  "task_tag": "Task 1.2",
+  "student_metadata": {
+    "name": "Vivek",
+    "roll_number": "230119",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part B",
+    "submission_date": "2026-03-12"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "provider": "OpenAI"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Identify method-specific assumptions in ECTS.",
+      "task_tag": "Task 1.2",
+      "prompt": "List paper-specific assumptions for ECTS (not generic ML assumptions), with violation scenarios.",
+      "response_summary": "Proposed assumptions around prefix informativeness, neighbor quality, stability, and data coverage.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Gave a candidate assumption set mapped to ECTS design choices.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I revised assumptions to ensure each one is traceable to paper methodology.",
+      "confidence_level": 5,
+      "why_important": "Task 1.2 grading depends on assumptions being specific and traceable."
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Format assumptions exactly as guideline requires.",
+      "task_tag": "Task 1.2",
+      "prompt": "Convert assumptions into the format: Assumption, Why needed, Violation scenario, Paper reference.",
+      "response_summary": "Returned a structured format for each assumption block with concise explanation fields.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Improved structure consistency with rubric expectations.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I manually checked each field for relevance and removed generic phrasing.",
+      "confidence_level": 5,
+      "why_important": "Ensures compliance with explicit formatting requirement."
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-12",
+      "tool_name": "Codex",
+      "model": "GPT-5",
+      "purpose": "Strengthen linkage to later failure-mode analysis.",
+      "task_tag": "Task 1.2",
+      "prompt": "How can I phrase assumptions so Task 3.2 failure mode can explicitly connect back to them?",
+      "response_summary": "Recommended making assumptions operational so they can be directly violated in synthetic failure setups.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Helped create a clean Question 1 to Question 3 linkage.",
+      "code_used_verbatim": false,
+      "student_modification": "N/A",
+      "student_verification": "I incorporated only the linkage logic, not any unsupported claims.",
+      "confidence_level": 5,
+      "why_important": "Reduces contradiction risk across tasks."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "List paper-specific assumptions for ECTS (not generic ML assumptions), with violation scenarios.",
+      "why_important": "Task 1.2 grading depends on assumptions being specific and traceable."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 2,
+      "prompt": "Convert assumptions into the format: Assumption, Why needed, Violation scenario, Paper reference.",
+      "why_important": "Ensures compliance with explicit formatting requirement."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 3,
+      "prompt": "How can I phrase assumptions so Task 3.2 failure mode can explicitly connect back to them?",
+      "why_important": "Reduces contradiction risk across tasks."
+    }
+  ],
+  "student_verification": "I verified that each logged interaction is task-relevant and that any copied code was reviewed and tested before inclusion.",
+  "student_declaration": {
+    "statement": "I declare that this file is an honest and complete disclosure of LLM usage for the stated task. Final decisions, interpretations, and conclusions are my own.",
+    "understanding_acknowledged": true,
+    "signature": "Vivek",
+    "date": "2026-03-12"
+  }
+}
